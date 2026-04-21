@@ -1,6 +1,8 @@
-# Deploy static site to GitHub Pages from main. Requires: Repo → Settings → Pages →
-# Build and deployment: Source = GitHub Actions. Add custom domain www.easyhisab.in there
-# (or rely on the CNAME file in this repo) and configure DNS per GitHub’s instructions.
+# Deploy static site to GitHub Pages from main.
+#
+# One-time (before the first run or the deploy API returns errors): Repo → Settings → Pages →
+# Build and deployment → Source = "GitHub Actions". That creates the Pages site resource.
+# Custom domain / DNS: Settings → Pages after deploy, plus root CNAME file.
 
 name: Deploy to GitHub Pages
 
@@ -36,9 +38,6 @@ jobs:
             --exclude='_site' \
             ./ _site/
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -46,4 +45,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         id: deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

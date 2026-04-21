@@ -30,9 +30,9 @@ Then open:
 
 Production domain: **`https://www.easyhisab.in`** (see root `CNAME`).
 
-1. Push this repo to GitHub on branch **`main`**.
-2. **Settings → Pages → Build and deployment:** set **Source** to **GitHub Actions** (not “Deploy from a branch”).
-3. After the first successful run of **Deploy to GitHub Pages**, open **Settings → Pages** and set **Custom domain** to `www.easyhisab.in` if it is not already detected from `CNAME`. Enable **Enforce HTTPS** when available.
+1. **Before the first workflow run (required):** open the repo on GitHub → **Settings → Pages → Build and deployment** and set **Source** to **GitHub Actions** (not “Deploy from a branch”). If this step is skipped, Actions will fail with “Get Pages site failed / Not Found” because GitHub has not created the Pages site yet.
+2. Push this repo to GitHub on branch **`main`** (or merge a PR) so **Deploy to GitHub Pages** runs.
+3. After a successful deploy: **Settings → Pages** → set **Custom domain** to `www.easyhisab.in` if needed (often picked up from the `CNAME` file). Enable **Enforce HTTPS** when available.
 4. **DNS:** add a **`CNAME`** record for **`www`** pointing to **`<your-github-user-or-org>.github.io`** (exact target is shown in the Pages custom-domain UI). For apex `easyhisab.in`, use your DNS provider’s redirect to `www` or GitHub’s documented **A** records for the apex.
 
 Paths to verify live:
