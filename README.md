@@ -26,12 +26,19 @@ Then open:
 - `http://localhost:8088/privacy-policy/`
 - `http://localhost:8088/delete-account/`
 
-## Deploy
+## Deploy (GitHub Pages)
 
-Deploy this folder to any static hosting provider (Cloudflare Pages, Netlify, Vercel static, S3 + CDN).
+Production domain: **`https://www.easyhisab.in`** (see root `CNAME`).
 
-Make sure your production domain serves:
+1. Push this repo to GitHub on branch **`main`**.
+2. **Settings → Pages → Build and deployment:** set **Source** to **GitHub Actions** (not “Deploy from a branch”).
+3. After the first successful run of **Deploy to GitHub Pages**, open **Settings → Pages** and set **Custom domain** to `www.easyhisab.in` if it is not already detected from `CNAME`. Enable **Enforce HTTPS** when available.
+4. **DNS:** add a **`CNAME`** record for **`www`** pointing to **`<your-github-user-or-org>.github.io`** (exact target is shown in the Pages custom-domain UI). For apex `easyhisab.in`, use your DNS provider’s redirect to `www` or GitHub’s documented **A** records for the apex.
+
+Paths to verify live:
 
 - `/`
 - `/privacy-policy/`
 - `/delete-account/`
+
+Other static hosts (Cloudflare Pages, Netlify, etc.) work too; adjust canonical URLs and `CNAME` as needed.

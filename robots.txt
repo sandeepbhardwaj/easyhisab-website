@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://easyhisab.in/sitemap.xml
+Sitemap: https://www.easyhisab.in/sitemap.xml
