@@ -17,13 +17,19 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .btn:hover {
+    transform: translateY(-1px);
+  }
 }
 
 body {
   margin: 0;
-  font-family: "Inter", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   background:
     radial-gradient(circle at 0% 0%, rgba(15, 159, 110, 0.1), transparent 33%),
     radial-gradient(circle at 100% 0%, rgba(11, 58, 143, 0.12), transparent 38%),
@@ -39,6 +45,12 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 .container {
@@ -185,7 +197,15 @@ h1 {
 
 .btn:hover {
   text-decoration: none;
-  transform: translateY(-1px);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.btn-primary:focus-visible {
+  outline-color: #e6fff7;
 }
 
 .btn-primary {
