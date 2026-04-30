@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EasyHisab | GST Billing for Indian Businesses</title>
+    <title>EasyHisab | GST Billing App for Indian Businesses</title>
     <meta
       name="description"
-      content="EasyHisab helps small businesses create and share GST invoices in under 30 seconds with inventory support and WhatsApp sharing."
+      content="EasyHisab is a mobile-first GST billing app for Indian businesses. Create invoices, manage customers and items, share PDFs, and keep reports ready for review."
     >
     <link rel="canonical" href="https://www.easyhisab.in/">
-    <meta property="og:title" content="EasyHisab - GST Billing in 30 Seconds">
+    <meta property="og:title" content="EasyHisab - GST Billing App for India">
     <meta
       property="og:description"
-      content="Simple, fast, and affordable GST billing for shopkeepers, freelancers, and small businesses."
+      content="GST invoicing, customer management, item catalog, PDF sharing, and business reports for Indian small businesses."
     >
     <meta property="og:type" content="website">
     <meta
@@ -25,101 +25,346 @@
   <body>
     <header class="topbar">
       <div class="container topbar-inner">
-        <a class="brand" href="./">
+        <a class="brand" href="./" aria-label="EasyHisab home">
           <span class="brand-mark">
-            <img src="public/assets/favicon.png" alt="EasyHisab mark">
+            <img src="public/assets/favicon.png" alt="">
           </span>
-          <span class="brand-name" aria-label="EasyHisab">
+          <span class="brand-name" aria-hidden="true">
             <span class="brand-easy">Easy</span><span class="brand-hisab">Hisab</span>
           </span>
         </a>
         <nav class="nav-links" aria-label="Primary">
           <a href="#features">Features</a>
-          <a href="privacy-policy/">Privacy Policy</a>
-          <a href="delete-account/">Data Deletion</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#reports">Reports</a>
+          <a href="privacy-policy/">Privacy</a>
         </nav>
       </div>
     </header>
 
     <main>
       <section class="hero">
-        <div class="container hero-grid">
-          <div>
-            <span class="eyebrow">Built for Indian businesses</span>
-            <h1>Create GST invoices in under 30 seconds</h1>
-            <p>
-              Simple, fast, and affordable billing for your business. EasyHisab helps you manage
-              invoices, GST, and inventory with a clean and reliable workflow.
-            </p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="mailto:easyhisabsupport@gmail.com?subject=EasyHisab%20Get%20Started">Get Started</a>
-              <a class="btn btn-secondary" href="mailto:easyhisabsupport@gmail.com?subject=EasyHisab%20Join%20Testing">Join Testing</a>
-            </div>
-            <div class="hero-points">
-              <span>GST compliant</span>
-              <span>WhatsApp sharing</span>
-              <span>Built for India</span>
+        <div class="hero-scene" aria-hidden="true">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="app-header">
+                <span>Home</span>
+                <span class="app-chip">GST ready</span>
+              </div>
+              <div class="business-tile">
+                <img src="public/assets/favicon.png" alt="">
+                <div>
+                  <strong>Shree Ganesh Traders</strong>
+                  <span>Business overview</span>
+                </div>
+              </div>
+              <div class="stats-row">
+                <span><strong>₹42,800</strong> Sales</span>
+                <span><strong>18</strong> Invoices</span>
+              </div>
+              <div class="invoice-card">
+                <span>INV-024</span>
+                <strong>Ravi Electricals</strong>
+                <small>CGST + SGST calculated</small>
+                <div class="invoice-meta">
+                  <b>₹8,496</b>
+                  <em class="pending">Pending</em>
+                </div>
+              </div>
+              <div class="invoice-card paid">
+                <span>INV-023</span>
+                <strong>Patel Hardware</strong>
+                <small>PDF shared on WhatsApp</small>
+                <div class="invoice-meta">
+                  <b>₹12,980</b>
+                  <em class="paid">Paid</em>
+                </div>
+              </div>
+              <div class="bottom-nav">
+                <span>Home</span>
+                <span>Invoices</span>
+                <img src="public/assets/favicon.png" alt="">
+                <span>Items</span>
+                <span>Customers</span>
+              </div>
             </div>
           </div>
-          <aside class="hero-card" aria-label="Product highlights">
-            <h2>Built for everyday business confidence</h2>
-            <p>Clean workflows, clear tax breakdowns, and fast sharing so your billing stays simple.</p>
-            <div class="hero-metric">
-              <div class="metric">
-                <strong>&lt; 30 sec</strong>
-                Invoice creation flow
-              </div>
-              <div class="metric">
-                <strong>GST-ready</strong>
-                Invoice and tax fields
-              </div>
-              <div class="metric">
-                <strong>WhatsApp</strong>
-                Share invoices instantly
-              </div>
-              <div class="metric">
-                <strong>Inventory</strong>
-                Track stock effortlessly
-              </div>
-            </div>
-          </aside>
+        </div>
+
+        <div class="container hero-content">
+          <span class="eyebrow">Mobile-first billing for Indian businesses</span>
+          <h1>GST invoices, customers, items and reports in one simple app</h1>
+          <p>
+            EasyHisab helps shopkeepers, freelancers and small business owners create invoices,
+            manage business details, share PDFs, track customers and keep reports ready for review.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="mailto:easyhisabsupport@gmail.com?subject=EasyHisab%20Get%20Started">Get early access</a>
+            <a class="btn btn-secondary" href="#features">See features</a>
+          </div>
+          <div class="hero-points" aria-label="Product highlights">
+            <span>GST invoice templates</span>
+            <span>PDF and WhatsApp sharing</span>
+            <span>CA-ready reports</span>
+            <span>Secure account controls</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-ledger" aria-label="EasyHisab trust highlights">
+        <div class="container ledger-grid">
+          <div>
+            <span>Auth</span>
+            <strong>Google sign-in</strong>
+            <small>No EasyHisab password to create or remember.</small>
+          </div>
+          <div>
+            <span>Session</span>
+            <strong>Token rotation</strong>
+            <small>Short-lived access tokens with hashed refresh tokens.</small>
+          </div>
+          <div>
+            <span>Data</span>
+            <strong>Business access checks</strong>
+            <small>Business records are guarded by authenticated access.</small>
+          </div>
+          <div>
+            <span>Backup</span>
+            <strong>Scheduled database backups</strong>
+            <small>Deployment includes PostgreSQL backups with retention.</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="section product-strip" aria-label="EasyHisab modules">
+        <div class="container strip-grid">
+          <div>
+            <strong>Invoices</strong>
+            <span>Create, preview, issue and share GST invoices.</span>
+          </div>
+          <div>
+            <strong>Customers</strong>
+            <span>Keep customer details ready for faster billing.</span>
+          </div>
+          <div>
+            <strong>Items</strong>
+            <span>Manage products and services with GST rates.</span>
+          </div>
+          <div>
+            <strong>Reports</strong>
+            <span>Review monthly sales and CA-friendly summaries.</span>
+          </div>
         </div>
       </section>
 
       <section class="section" id="features">
-        <div class="container">
-          <h2>Everything needed for daily billing</h2>
-          <div class="feature-grid">
-            <article class="feature-card">
-              <h3>Fast Invoicing</h3>
-              <p>Create and share professional invoices in seconds without complex setup.</p>
-            </article>
-            <article class="feature-card">
-              <h3>GST Compliant Billing</h3>
-              <p>Structured invoice workflow built around GST requirements for Indian businesses.</p>
-            </article>
-            <article class="feature-card">
-              <h3>Inventory Management</h3>
-              <p>Track items and maintain billing-ready inventory as your business grows.</p>
-            </article>
-            <article class="feature-card">
-              <h3>WhatsApp Sharing</h3>
-              <p>Send invoices quickly to customers over WhatsApp for faster collections.</p>
-            </article>
+        <div class="container section-head">
+          <span class="section-kicker">What EasyHisab handles</span>
+          <h2>Daily billing tools without accounting complexity</h2>
+          <p>
+            EasyHisab focuses on the repeated jobs small businesses do every day: create a bill,
+            send it, track it, and keep business details consistent.
+          </p>
+        </div>
+        <div class="container feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">01</span>
+            <h3>GST invoice creation</h3>
+            <p>Create draft invoices, add line items, apply discounts, calculate GST and issue a PDF when ready.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">02</span>
+            <h3>Business setup</h3>
+            <p>Save GSTIN, bank details, invoice terms, logo and template preference for consistent PDFs.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">03</span>
+            <h3>Customers and items</h3>
+            <p>Maintain customers, products and services so invoice creation stays quick and consistent.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">04</span>
+            <h3>Sharing and activity</h3>
+            <p>Preview invoices, share PDFs, mark payments, create credit notes and review invoice activity.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">05</span>
+            <h3>Reports for review</h3>
+            <p>Use monthly summaries and CA-ready exports to review sales, taxes and outstanding amounts.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">06</span>
+            <h3>Account controls</h3>
+            <p>Switch businesses, review plan limits, use biometric unlock and control diagnostics preferences.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section usp-section">
+        <div class="container section-head">
+          <span class="section-kicker">Why businesses choose it</span>
+          <h2>Fast enough for daily billing, structured enough for records</h2>
+          <p>
+            EasyHisab combines everyday billing speed with the controls a growing business needs:
+            clean records, business-level access checks, backups, and sensible account security.
+          </p>
+        </div>
+        <div class="container usp-grid">
+          <article class="usp-card highlight">
+            <div class="usp-flow-preview" aria-hidden="true">
+              <div>
+                <span>Draft</span>
+                <strong>Customer + items</strong>
+              </div>
+              <div>
+                <span>Tax</span>
+                <strong>CGST + SGST</strong>
+              </div>
+              <div>
+                <span>Preview</span>
+                <strong>PDF ready</strong>
+              </div>
+              <div>
+                <span>Share</span>
+                <strong>WhatsApp / PDF</strong>
+              </div>
+            </div>
+            <div>
+              <span class="usp-label">Most visible benefit</span>
+              <h3>Invoice quickly without losing GST detail</h3>
+              <p>
+                Draft invoices, customer details, item catalog, discounts, tax split, PDF preview and issuing stay together.
+              </p>
+            </div>
+          </article>
+          <article class="usp-card">
+            <span class="usp-label">For owners</span>
+            <h3>Business profile that improves every invoice</h3>
+            <p>
+              GSTIN, state, logo, bank details, terms and template preference are reused so every bill looks consistent.
+            </p>
+          </article>
+          <article class="usp-card">
+            <span class="usp-label">For returning users</span>
+            <h3>Secure unlock and session restore</h3>
+            <p>
+              The mobile app supports secure session persistence and optional biometric unlock on supported devices.
+            </p>
+          </article>
+          <article class="usp-card">
+            <span class="usp-label">For operations</span>
+            <h3>Server-backed business data</h3>
+            <p>
+              Core business records live behind authenticated APIs, with scheduled PostgreSQL backup jobs in the deployment setup.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section workflow" id="workflow">
+        <div class="container workflow-grid">
+          <div class="section-head compact">
+            <span class="section-kicker">How it feels in use</span>
+            <h2>Built around the real invoice journey</h2>
+            <p>
+              EasyHisab keeps the common billing path short while preserving the details needed for GST and record keeping.
+            </p>
+          </div>
+          <ol class="steps">
+            <li>
+              <strong>Select business</strong>
+              <span>Choose the business profile and invoice defaults.</span>
+            </li>
+            <li>
+              <strong>Create invoice</strong>
+              <span>Pick a customer, add items, review taxes and totals.</span>
+            </li>
+            <li>
+              <strong>Preview PDF</strong>
+              <span>Check the invoice layout before issuing.</span>
+            </li>
+            <li>
+              <strong>Share and track</strong>
+              <span>Send the PDF and follow payment or credit note activity.</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section reports-band" id="reports">
+        <div class="container reports-grid">
+          <div>
+            <span class="section-kicker">For month-end clarity</span>
+            <h2>Reports your accountant can review quickly</h2>
+            <p>
+              Keep sales, GST and invoice activity organized so regular review does not turn into manual cleanup.
+            </p>
+          </div>
+          <div class="report-panel">
+            <div class="report-row">
+              <span>Monthly sales</span>
+              <strong>₹1,84,200</strong>
+            </div>
+            <div class="report-row">
+              <span>GST collected</span>
+              <strong>₹28,108</strong>
+            </div>
+            <div class="report-row">
+              <span>Outstanding</span>
+              <strong>₹36,500</strong>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section trust">
-        <div class="container">
-          <div class="trust-card">
-            <strong>Built for Indian businesses</strong>
+      <section class="section security-section">
+        <div class="container security-grid">
+          <div class="section-head compact">
+            <span class="section-kicker">Trust foundation</span>
+            <h2>Security-minded by design, not as an afterthought</h2>
             <p>
-              EasyHisab is focused on practical day-to-day billing needs of shopkeepers,
-              freelancers, and small business owners - with clean UX, predictable performance, and
-              trustworthy data handling.
+              EasyHisab is built around authenticated access, business-level boundaries and recoverability practices that matter for financial records.
             </p>
           </div>
+          <div class="security-list">
+            <div>
+              <strong>Google identity</strong>
+              <span>Sign in through Google; there is no EasyHisab password login flow.</span>
+            </div>
+            <div>
+              <strong>JWT access control</strong>
+              <span>API routes require signed tokens with issuer and audience validation.</span>
+            </div>
+            <div>
+              <strong>Refresh-token hygiene</strong>
+              <span>Refresh tokens are stored hashed server-side and rotated when sessions refresh.</span>
+            </div>
+            <div>
+              <strong>Business-level tenancy</strong>
+              <span>Business-scoped APIs verify that the signed-in user can access that business.</span>
+            </div>
+            <div>
+              <strong>Backup runbook</strong>
+              <span>Deployment includes PostgreSQL backup scripts with configurable interval and retention.</span>
+            </div>
+            <div>
+              <strong>Privacy controls</strong>
+              <span>Users can control diagnostics preferences from the app settings screen.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final-cta">
+        <div class="container final-grid">
+          <div>
+            <span class="section-kicker">Early access</span>
+            <h2>Want to try EasyHisab for your business?</h2>
+            <p>
+              Join testing and help shape EasyHisab around real billing workflows used by Indian small businesses.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="mailto:easyhisabsupport@gmail.com?subject=EasyHisab%20Join%20Testing">Join testing</a>
         </div>
       </section>
     </main>
