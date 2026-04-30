@@ -21,15 +21,28 @@
   <body>
     <header class="topbar">
       <div class="container topbar-inner">
-        <a class="brand" href="../">
-          <span class="brand-mark">
-            <img src="../public/assets/favicon.png" alt="EasyHisab mark">
-          </span>
-          <span class="brand-name" aria-label="EasyHisab">
-            <span class="brand-easy">Easy</span><span class="brand-hisab">Hisab</span>
-          </span>
-        </a>
-        <nav class="nav-links" aria-label="Primary">
+        <div class="topbar-row">
+          <a class="brand" href="../">
+            <span class="brand-mark">
+              <img src="../public/assets/favicon.png" alt="EasyHisab mark">
+            </span>
+            <span class="brand-name" aria-label="EasyHisab">
+              <span class="brand-easy">Easy</span><span class="brand-hisab">Hisab</span>
+            </span>
+          </a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Toggle navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav id="primary-nav" class="nav-links" aria-label="Primary">
           <a href="../">Home</a>
           <a href="../delete-account/">Data Deletion</a>
         </nav>
@@ -61,7 +74,7 @@
           </ul>
 
           <h2>Data Sharing</h2>
-          <p>EasyHisab does not sell personal data to third parties. Data is not sold to third parties.</p>
+          <p>EasyHisab does not sell personal data to third parties.</p>
 
           <h2>Security</h2>
           <p>Data is encrypted in transit using HTTPS to protect communication between app and backend systems.</p>
@@ -90,6 +103,15 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("primary-nav");
+      if (menuToggle && nav) {
+        menuToggle.addEventListener("click", () => {
+          const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+          menuToggle.setAttribute("aria-expanded", String(!expanded));
+          nav.classList.toggle("open", !expanded);
+        });
+      }
     </script>
   </body>
 </html>

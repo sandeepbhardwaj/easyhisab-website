@@ -25,15 +25,28 @@
   <body>
     <header class="topbar">
       <div class="container topbar-inner">
-        <a class="brand" href="./" aria-label="EasyHisab home">
-          <span class="brand-mark">
-            <img src="public/assets/favicon.png" alt="">
-          </span>
-          <span class="brand-name" aria-hidden="true">
-            <span class="brand-easy">Easy</span><span class="brand-hisab">Hisab</span>
-          </span>
-        </a>
-        <nav class="nav-links" aria-label="Primary">
+        <div class="topbar-row">
+          <a class="brand" href="./" aria-label="EasyHisab home">
+            <span class="brand-mark">
+              <img src="public/assets/favicon.png" alt="">
+            </span>
+            <span class="brand-name" aria-hidden="true">
+              <span class="brand-easy">Easy</span><span class="brand-hisab">Hisab</span>
+            </span>
+          </a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Toggle navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav id="primary-nav" class="nav-links" aria-label="Primary">
           <a href="#features">Features</a>
           <a href="#workflow">Workflow</a>
           <a href="#reports">Reports</a>
@@ -116,22 +129,22 @@
           <div>
             <span>Auth</span>
             <strong>Google sign-in</strong>
-            <small>No EasyHisab password to create or remember.</small>
+            <small>Use your Google account to sign in quickly and safely.</small>
           </div>
           <div>
-            <span>Session</span>
-            <strong>Rotating sessions</strong>
-            <small>Short-lived access tokens with hashed refresh tokens.</small>
+            <span>Access</span>
+            <strong>Safe account access</strong>
+            <small>Your account stays protected in every active session.</small>
           </div>
           <div>
             <span>Data</span>
-            <strong>Business access checks</strong>
-            <small>Business records are guarded by authenticated access.</small>
+            <strong>Business-level protection</strong>
+            <small>Only the right signed-in users can view business data.</small>
           </div>
           <div>
             <span>Backup</span>
-            <strong>Scheduled database backups</strong>
-            <small>Deployment includes PostgreSQL backups with retention.</small>
+            <strong>Regular backups</strong>
+            <small>Your records are backed up regularly for recovery support.</small>
           </div>
         </div>
       </section>
@@ -255,7 +268,7 @@
             <span class="usp-label">For operations</span>
             <h3>Server-backed records and backups</h3>
             <p>
-              Core business records live behind authenticated APIs, with scheduled PostgreSQL backup jobs in the deployment setup.
+              Core business records are protected on the server, with scheduled backups for reliability.
             </p>
           </article>
         </div>
@@ -321,31 +334,31 @@
         <div class="container security-grid">
           <div class="section-head compact">
             <span class="section-kicker">Trust foundation</span>
-            <h2>Security and recoverability built into the foundation</h2>
+            <h2>Your business records stay safe and recoverable</h2>
             <p>
-              EasyHisab is built around authenticated access, business-level access boundaries and recoverability practices that matter for financial records.
+              EasyHisab is built so your team can use billing confidently every day, with safe access controls and reliable recovery support for important records.
             </p>
           </div>
           <div class="security-list">
             <div>
               <strong>Google identity</strong>
-              <span>Sign in through Google; there is no EasyHisab password login flow.</span>
+              <span>Sign in with Google so you do not need to manage another password.</span>
             </div>
             <div>
-              <strong>JWT access control</strong>
-              <span>API routes require signed tokens with issuer and audience validation.</span>
+              <strong>Protected account access</strong>
+              <span>Only verified users can access billing actions and records.</span>
             </div>
             <div>
-              <strong>Refresh-token hygiene</strong>
-              <span>Refresh tokens are stored hashed server-side and rotated when sessions refresh.</span>
+              <strong>Safe ongoing sessions</strong>
+              <span>Your account access stays protected while you continue using the app.</span>
             </div>
             <div>
               <strong>Business-level access</strong>
-              <span>Business-scoped APIs verify that the signed-in user can access that business.</span>
+              <span>Data is scoped per business so users only see what they should.</span>
             </div>
             <div>
-              <strong>Backup runbook</strong>
-              <span>Deployment includes PostgreSQL backup scripts with configurable interval and retention.</span>
+              <strong>Backup and recovery support</strong>
+              <span>Regular backups help recover important records if needed.</span>
             </div>
             <div>
               <strong>Privacy controls</strong>
@@ -381,6 +394,21 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("primary-nav");
+      if (menuToggle && nav) {
+        menuToggle.addEventListener("click", () => {
+          const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+          menuToggle.setAttribute("aria-expanded", String(!expanded));
+          nav.classList.toggle("open", !expanded);
+        });
+        nav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            menuToggle.setAttribute("aria-expanded", "false");
+            nav.classList.remove("open");
+          });
+        });
+      }
     </script>
   </body>
 </html>
