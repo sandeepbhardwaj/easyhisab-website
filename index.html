@@ -87,46 +87,71 @@
         <div class="hero-scene" aria-hidden="true">
           <div class="phone-frame">
             <div class="phone-screen">
-              <div class="app-header">
-                <span>Home</span>
-                <span class="app-chip">GST ready</span>
-              </div>
-              <div class="business-tile">
-                <img src="public/assets/favicon.png" alt="">
-                <div>
-                  <strong>Shree Ganesh Traders</strong>
-                  <span>Business overview</span>
+              <div class="phone-status" aria-hidden="true">
+                <span class="phone-status-time">9:41</span>
+                <div class="phone-status-tray">
+                  <span class="phone-signal" aria-hidden="true">
+                    <i></i><i></i><i></i>
+                  </span>
+                  <span class="phone-battery" aria-hidden="true"></span>
                 </div>
               </div>
-              <div class="stats-row">
-                <span><strong>₹42,800</strong> Sales</span>
-                <span><strong>18</strong> Invoices</span>
-              </div>
-              <div class="invoice-card">
-                <span>INV-024</span>
-                <strong>Ravi Electricals</strong>
-                <small>CGST + SGST calculated</small>
-                <div class="invoice-meta">
-                  <b>₹8,496</b>
-                  <em class="pending">Pending</em>
+              <div class="phone-scroll">
+                <div class="app-header">
+                  <span class="app-header-title">Home</span>
+                  <span class="app-chip">GST ready</span>
+                </div>
+                <div class="business-tile">
+                  <span class="business-avatar" aria-hidden="true">
+                    <img src="public/assets/favicon.png" alt="">
+                  </span>
+                  <div class="business-copy">
+                    <strong>Shree Ganesh Traders</strong>
+                    <span>Business overview</span>
+                  </div>
+                </div>
+                <div class="stats-row">
+                  <span><strong>₹42,800</strong> Sales this month</span>
+                  <span><strong>18</strong> Invoices</span>
+                </div>
+                <p class="phone-section-label">Recent invoices</p>
+                <div class="invoice-card invoice-card--pending">
+                  <div class="invoice-card-head">
+                    <span class="invoice-no">INV-024</span>
+                    <span class="invoice-badge invoice-badge--draft">Draft</span>
+                  </div>
+                  <strong class="invoice-party">Ravi Electricals</strong>
+                  <div class="invoice-lines">
+                    <div class="invoice-line"><span>Taxable value</span><span>₹7,200</span></div>
+                    <div class="invoice-line"><span>CGST + SGST (18%)</span><span>₹1,296</span></div>
+                  </div>
+                  <div class="invoice-meta">
+                    <b>₹8,496</b>
+                    <em class="pending">Pending</em>
+                  </div>
+                </div>
+                <div class="invoice-card invoice-card--paid">
+                  <div class="invoice-card-head">
+                    <span class="invoice-no">INV-023</span>
+                    <span class="invoice-badge invoice-badge--issued">Issued</span>
+                  </div>
+                  <strong class="invoice-party">Patel Hardware</strong>
+                  <p class="invoice-note">PDF shared on WhatsApp</p>
+                  <div class="invoice-meta">
+                    <b>₹12,980</b>
+                    <em class="paid">Paid</em>
+                  </div>
                 </div>
               </div>
-              <div class="invoice-card paid">
-                <span>INV-023</span>
-                <strong>Patel Hardware</strong>
-                <small>PDF shared on WhatsApp</small>
-                <div class="invoice-meta">
-                  <b>₹12,980</b>
-                  <em class="paid">Paid</em>
-                </div>
-              </div>
-              <div class="bottom-nav">
-                <span>Home</span>
+              <nav class="bottom-nav" aria-hidden="true">
+                <span class="is-active">Home</span>
                 <span>Invoices</span>
-                <img src="public/assets/favicon.png" alt="">
+                <span class="bottom-nav-fab" aria-hidden="true">
+                  <img src="public/assets/favicon.png" alt="">
+                </span>
                 <span>Items</span>
                 <span>Customers</span>
-              </div>
+              </nav>
             </div>
           </div>
         </div>
