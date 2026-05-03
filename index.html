@@ -6,23 +6,49 @@
     <title>EasyHisab | Simple GST Billing for Indian Businesses</title>
     <meta
       name="description"
-      content="EasyHisab is a mobile-first GST billing app for Indian businesses. Create invoices, manage customers and items, share PDFs, and keep reports ready for review."
+      content="EasyHisab is GST billing for Indian businesses on Android: invoices, customers, items, PDF sharing, and CA-ready reports. Download on Google Play."
     >
     <link rel="canonical" href="https://www.easyhisab.in/">
-    <meta property="og:title" content="EasyHisab - Simple GST Billing for India">
+    <meta property="og:site_name" content="EasyHisab">
+    <meta property="og:url" content="https://www.easyhisab.in/">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:title" content="EasyHisab — GST billing for Indian businesses">
     <meta
       property="og:description"
-      content="GST invoicing, customer management, item catalog, PDF sharing, and business reports for Indian small businesses."
+      content="Create GST invoices, manage customers and items, share PDFs, and keep CA-ready reports. Download on Google Play for Android."
     >
     <meta property="og:type" content="website">
     <meta
       property="og:image"
-      content="https://www.easyhisab.in/public/assets/logo-transparent.png"
+      content="https://www.easyhisab.in/public/assets/og-share.png"
     >
+    <meta property="og:image:secure_url" content="https://www.easyhisab.in/public/assets/og-share.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta
+      property="og:image:alt"
+      content="EasyHisab — GST invoices, customers, and reports on Android"
+    >
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EasyHisab — GST billing for Indian businesses">
+    <meta
+      name="twitter:description"
+      content="GST invoices, customers, catalog, PDF sharing, and reports. On Google Play for Android."
+    >
+    <meta name="twitter:image" content="https://www.easyhisab.in/public/assets/og-share.png">
     <link rel="icon" type="image/png" href="public/assets/favicon.png">
+    <meta name="theme-color" content="#e8eef6">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="topbar">
       <div class="container topbar-inner">
         <div class="topbar-row">
@@ -50,12 +76,13 @@
           <a href="#features">Features</a>
           <a href="#workflow">Workflow</a>
           <a href="#reports">Reports</a>
+          <a href="#get-app">Download</a>
           <a href="privacy-policy/">Privacy</a>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero">
         <div class="hero-scene" aria-hidden="true">
           <div class="phone-frame">
@@ -105,14 +132,19 @@
         </div>
 
         <div class="container hero-content">
-          <span class="eyebrow">GST billing app for Indian businesses</span>
+          <span class="eyebrow">GST billing for Indian businesses</span>
           <h1>Simple GST billing for growing Indian businesses</h1>
           <p>
             EasyHisab helps shopkeepers, freelancers and small business owners create invoices,
-            manage customers and items, share PDFs, and keep reports ready for review.
+            manage customers and items, share PDFs, and keep reports ready for review. Get the Android app on Google Play.
           </p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="mailto:easyhisabsupport@gmail.com?subject=EasyHisab%20Get%20Started">Request early access</a>
+            <a
+              class="btn btn-primary"
+              href="https://play.google.com/store/apps/details?id=com.easyhisab.billing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Get it on Google Play</a>
             <a class="btn btn-secondary" href="#features">Explore features</a>
           </div>
           <div class="hero-points" aria-label="Product highlights">
@@ -368,16 +400,28 @@
         </div>
       </section>
 
-      <section class="section final-cta">
+      <section class="section final-cta" id="get-app">
         <div class="container final-grid">
           <div>
-            <span class="section-kicker">Early access</span>
-            <h2>Want to try EasyHisab for your business?</h2>
+            <span class="section-kicker">Get EasyHisab</span>
+            <h2>Download the app and start billing today</h2>
             <p>
-              Join testing and help shape EasyHisab around real billing workflows used by Indian small businesses.
+              Install EasyHisab from Google Play, set up your business profile, and issue GST invoices from your phone.
+              For account help, billing questions, or feedback, contact our support team—we respond to every message.
             </p>
           </div>
-          <a class="btn btn-primary" href="mailto:easyhisabsupport@gmail.com?subject=EasyHisab%20Join%20Testing">Request access</a>
+          <div class="final-cta-actions">
+            <a
+              class="btn btn-primary"
+              href="https://play.google.com/store/apps/details?id=com.easyhisab.billing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Get it on Google Play</a>
+            <a
+              class="btn btn-secondary"
+              href="mailto:easyhisabsupport@gmail.com?subject=EasyHisab%20Support"
+            >Contact support</a>
+          </div>
         </div>
       </section>
     </main>
@@ -392,23 +436,6 @@
       </div>
     </footer>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-      const menuToggle = document.querySelector(".menu-toggle");
-      const nav = document.getElementById("primary-nav");
-      if (menuToggle && nav) {
-        menuToggle.addEventListener("click", () => {
-          const expanded = menuToggle.getAttribute("aria-expanded") === "true";
-          menuToggle.setAttribute("aria-expanded", String(!expanded));
-          nav.classList.toggle("open", !expanded);
-        });
-        nav.querySelectorAll("a").forEach((link) => {
-          link.addEventListener("click", () => {
-            menuToggle.setAttribute("aria-expanded", "false");
-            nav.classList.remove("open");
-          });
-        });
-      }
-    </script>
+    <script src="js/site.js" defer></script>
   </body>
 </html>
