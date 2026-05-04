@@ -1,23 +1,71 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <linearGradient id="og-bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#eef2f8"/>
-      <stop offset="50%" stop-color="#f4f7fc"/>
-      <stop offset="100%" stop-color="#e4ebf5"/>
+    <linearGradient id="og-bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#9ec2ff"/>
+      <stop offset="34%" stop-color="#e8f0ff"/>
+      <stop offset="68%" stop-color="#d9f2e4"/>
+      <stop offset="100%" stop-color="#ffe8c4"/>
     </linearGradient>
+    <radialGradient id="blob-blue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(80 520) rotate(-15) scale(340 280)">
+      <stop offset="0%" stop-color="#1560d4" stop-opacity="0.42"/>
+      <stop offset="70%" stop-color="#1560d4" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#1560d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob-green" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1080 80) rotate(20) scale(380 320)">
+      <stop offset="0%" stop-color="#1d9a52" stop-opacity="0.36"/>
+      <stop offset="65%" stop-color="#1d9a52" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#1d9a52" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob-gold" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 480) scale(220 220)">
+      <stop offset="0%" stop-color="#f5a524" stop-opacity="0.52"/>
+      <stop offset="60%" stop-color="#e8a42e" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#e8a42e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="headline-fill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a3478"/>
+      <stop offset="50%" stop-color="#1560d4"/>
+      <stop offset="100%" stop-color="#15824d"/>
+    </linearGradient>
+    <linearGradient id="card-sheen" x1="180" y1="160" x2="1020" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.97"/>
+      <stop offset="50%" stop-color="#fbfdff" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#eef6ff" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="accent-strip" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1560d4"/>
+      <stop offset="50%" stop-color="#1d9a52"/>
+      <stop offset="100%" stop-color="#e8a42e"/>
+    </linearGradient>
+    <filter id="card-drop" x="-80" y="-80" width="1360" height="790" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="14" stdDeviation="28" flood-color="#0c1829" flood-opacity="0.14"/>
+    </filter>
   </defs>
   <rect width="1200" height="630" fill="url(#og-bg)"/>
-  <g opacity="0.07" fill="#1560d4">
-    <circle cx="1040" cy="110" r="118"/>
-    <circle cx="1140" cy="200" r="68"/>
+  <rect width="1200" height="630" fill="url(#blob-blue)"/>
+  <rect width="1200" height="630" fill="url(#blob-green)"/>
+  <rect width="1200" height="630" fill="url(#blob-gold)"/>
+  <g opacity="0.11" fill="none" stroke="#1560d4" stroke-width="1.35">
+    <path d="M0 420 C200 380 400 460 600 400 S1000 320 1200 360"/>
+    <path d="M0 480 C180 440 380 520 580 460 S960 400 1200 430"/>
   </g>
-  <rect x="180" y="188" width="840" height="254" rx="20" fill="#ffffff" opacity="0.88"/>
+  <g filter="url(#card-drop)">
+    <rect x="168" y="142" width="864" height="346" rx="26" fill="url(#card-sheen)" stroke="rgba(21,96,212,0.22)" stroke-width="1.5"/>
+  </g>
   <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif">
-    <g transform="translate(600,248)">
-      <text x="-3" y="0" text-anchor="end" font-size="38" font-weight="700" fill="#1560d4" letter-spacing="-0.02em">Easy</text>
-      <text x="3" y="0" text-anchor="start" font-size="38" font-weight="700" fill="#0c1829" letter-spacing="-0.02em">Hisab</text>
+    <g transform="translate(600,222)">
+      <text x="-4" y="0" text-anchor="end" font-size="40" font-weight="800" fill="#1560d4" letter-spacing="-0.03em">Easy</text>
+      <text x="4" y="0" text-anchor="start" font-size="40" font-weight="800" fill="#0a3478" letter-spacing="-0.03em">Hisab</text>
     </g>
-    <text x="600" y="318" text-anchor="middle" font-size="36" font-weight="700" fill="#0c1829" letter-spacing="-0.02em">GST billing for Indian businesses</text>
-    <text x="600" y="378" text-anchor="middle" font-size="19" font-weight="500" fill="#4a5d73" letter-spacing="0.02em">Invoices, customers, reports, Android</text>
+    <g transform="translate(600,268)">
+      <rect x="-198" y="-14" width="84" height="30" rx="15" fill="#dff5e8"/>
+      <text x="-156" y="7" text-anchor="middle" font-size="14" font-weight="700" fill="#157a3f">GST ready</text>
+      <rect x="-100" y="-14" width="100" height="30" rx="15" fill="#e4edfc"/>
+      <text x="-50" y="7" text-anchor="middle" font-size="14" font-weight="700" fill="#1560d4">Invoices</text>
+      <rect x="12" y="-14" width="96" height="30" rx="15" fill="#fff4d6"/>
+      <text x="60" y="7" text-anchor="middle" font-size="14" font-weight="700" fill="#b45309">Android</text>
+    </g>
+    <rect x="300" y="298" width="600" height="6" rx="3" fill="url(#accent-strip)" opacity="0.92"/>
+    <text x="600" y="356" text-anchor="middle" font-size="38" font-weight="800" fill="url(#headline-fill)" letter-spacing="-0.03em">GST billing for Indian businesses</text>
+    <text x="600" y="416" text-anchor="middle" font-size="19" font-weight="600" fill="#3d5270" letter-spacing="0.03em">Simple records. Shareable PDFs. Built for everyday shops.</text>
   </g>
 </svg>
