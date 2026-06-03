@@ -6,7 +6,7 @@
     <title>EasyHisab | Simple GST Billing for Indian Businesses</title>
     <meta
       name="description"
-      content="EasyHisab is GST billing for Indian businesses on Android: invoices, customers, items, PDF sharing, and CA-ready reports. Download on Google Play."
+      content="EasyHisab is GST billing for Indian businesses on Android: invoices, credit notes, customers, items, PDF sharing, in-app alerts, and CA report CSV export. Download on Google Play."
     >
     <link rel="canonical" href="https://www.easyhisab.in/">
     <meta property="og:site_name" content="EasyHisab">
@@ -34,8 +34,32 @@
       content="GST invoices, customers, catalog, PDF sharing, and reports. On Google Play for Android."
     >
     <meta name="twitter:image" content="https://www.easyhisab.in/assets/og-share.jpg">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
     <meta name="theme-color" content="#e8eef6">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "EasyHisab",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Android",
+        "description": "GST billing for Indian businesses: invoices, customers, items, PDF sharing, credit notes, and CA-ready reports.",
+        "url": "https://www.easyhisab.in/",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.easyhisab.billing",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "EasyHisab",
+          "url": "https://www.easyhisab.in/"
+        }
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -70,6 +94,7 @@
           </button>
         </div>
         <nav id="primary-nav" class="nav-links" aria-label="Primary">
+          <a href="#app-preview">App preview</a>
           <a href="#features">Features</a>
           <a href="#workflow">Workflow</a>
           <a href="#reports">Reports</a>
@@ -95,21 +120,23 @@
               </div>
               <div class="phone-scroll">
                 <div class="app-header">
-                  <span class="app-header-title">Home</span>
-                  <span class="app-chip">GST ready</span>
-                </div>
-                <div class="business-tile">
-                  <span class="business-avatar" aria-hidden="true">
-                    <img src="assets/favicon.png" alt="">
-                  </span>
-                  <div class="business-copy">
-                    <strong>Shree Ganesh Traders</strong>
-                    <span>Business overview</span>
+                  <div class="app-header-main">
+                    <strong class="app-header-title">Shree Ganesh Traders</strong>
+                    <span class="app-header-sub">GSTIN 27AABCU9603R1ZM</span>
                   </div>
+                  <span class="app-header-bell" aria-hidden="true">
+                    <span class="app-header-bell-dot"></span>
+                  </span>
                 </div>
-                <div class="stats-row">
-                  <span><strong>₹42,800</strong> Sales this month</span>
-                  <span><strong>18</strong> Invoices</span>
+                <div class="hero-metric" aria-hidden="true">
+                  <span>Total receivables</span>
+                  <strong>₹36,500</strong>
+                  <em>3 overdue invoices</em>
+                </div>
+                <div class="kpi-row" aria-hidden="true">
+                  <span><b>₹1.2L</b>Paid</span>
+                  <span><b>₹36.5K</b>Overdue</span>
+                  <span><b>2</b>Drafts</span>
                 </div>
                 <p class="phone-section-label">Recent invoices</p>
                 <div class="invoice-card invoice-card--pending">
@@ -143,11 +170,9 @@
               <nav class="bottom-nav" aria-hidden="true">
                 <span class="is-active">Home</span>
                 <span>Invoices</span>
-                <span class="bottom-nav-fab" aria-hidden="true">
-                  <img src="assets/favicon.png" alt="">
-                </span>
                 <span>Items</span>
                 <span>Customers</span>
+                <span>More</span>
               </nav>
             </div>
           </div>
@@ -167,13 +192,14 @@
               target="_blank"
               rel="noopener noreferrer"
             >Get it on Google Play</a>
-            <a class="btn btn-secondary" href="#features">Explore features</a>
+            <a class="btn btn-secondary" href="#app-preview">See app preview</a>
           </div>
           <div class="hero-points" aria-label="Product highlights">
             <span>GST invoice templates</span>
+            <span>CGST/SGST or IGST by place of supply</span>
             <span>PDF and WhatsApp sharing</span>
-            <span>CA-ready reports</span>
-            <span>Secure account controls</span>
+            <span>CA report CSV export</span>
+            <span>In-app alerts and activity</span>
           </div>
         </div>
       </section>
@@ -203,11 +229,71 @@
         </div>
       </section>
 
+      <section class="section app-showcase" id="app-preview">
+        <div class="container section-head">
+          <span class="section-kicker">App preview</span>
+          <h2>What you get on Android</h2>
+          <p>
+            Styled previews mirror the live app: home receivables, GST tax lines (intra- and inter-state),
+            and monthly CA report export from the Reports screen.
+          </p>
+        </div>
+        <div class="container showcase-grid">
+          <article class="showcase-card">
+            <h3>Home dashboard</h3>
+            <p>Total receivables, paid/overdue/draft KPIs, recent invoices, and notification alerts.</p>
+            <div class="showcase-screen showcase-screen--home" aria-hidden="true">
+              <div class="showcase-bar">
+                <strong>Shree Ganesh Traders</strong>
+                <span class="showcase-bell"><i></i></span>
+              </div>
+              <div class="showcase-hero-metric">
+                <span>Total receivables</span>
+                <strong>₹36,500</strong>
+              </div>
+              <div class="showcase-kpis">
+                <span><b>₹1.2L</b>Paid</span>
+                <span><b>₹36.5K</b>Overdue</span>
+                <span><b>2</b>Drafts</span>
+              </div>
+            </div>
+          </article>
+          <article class="showcase-card">
+            <h3>GST invoice preview</h3>
+            <p>Drafts with CGST + SGST or IGST, discounts, PDF preview, then issue and share.</p>
+            <div class="showcase-screen showcase-screen--invoice" aria-hidden="true">
+              <div class="showcase-doc-head">
+                <span>TAX INVOICE</span>
+                <strong>INV-024</strong>
+              </div>
+              <div class="showcase-doc-line"><span>Taxable value</span><span>₹7,200</span></div>
+              <div class="showcase-doc-line"><span>CGST 9% + SGST 9%</span><span>₹1,296</span></div>
+              <div class="showcase-doc-line showcase-doc-line--muted"><span>Inter-state example</span><span>IGST 18%</span></div>
+              <div class="showcase-doc-total"><span>Grand total</span><strong>₹8,496</strong></div>
+            </div>
+          </article>
+          <article class="showcase-card">
+            <h3>Reports and CA export</h3>
+            <p>Monthly sales, GST collected, outstanding — export a CA-ready CSV for your accountant.</p>
+            <div class="showcase-screen showcase-screen--reports" aria-hidden="true">
+              <div class="showcase-doc-line"><span>May 2026 sales</span><span>₹1,84,200</span></div>
+              <div class="showcase-doc-line"><span>GST collected</span><span>₹28,108</span></div>
+              <div class="showcase-doc-line"><span>Outstanding</span><span>₹36,500</span></div>
+              <div class="showcase-export">Export CA report (CSV)</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section class="section product-strip" aria-label="EasyHisab modules">
         <div class="container strip-grid">
           <div>
             <strong>Invoices</strong>
             <span>Create, preview, issue and share GST invoices.</span>
+          </div>
+          <div>
+            <strong>Credit notes</strong>
+            <span>Issue and track credit notes against invoices.</span>
           </div>
           <div>
             <strong>Customers</strong>
@@ -219,7 +305,11 @@
           </div>
           <div>
             <strong>Reports</strong>
-            <span>Review monthly sales and CA-friendly summaries.</span>
+            <span>Monthly summaries and CA report CSV export.</span>
+          </div>
+          <div>
+            <strong>Alerts</strong>
+            <span>In-app notifications for invoice and credit-note activity.</span>
           </div>
         </div>
       </section>
@@ -251,13 +341,13 @@
           </article>
           <article class="feature-card">
             <span class="feature-icon">04</span>
-            <h3>Sharing and activity</h3>
-            <p>Preview invoices, share PDFs, mark payments, create credit notes and review activity.</p>
+            <h3>Sharing, credit notes and alerts</h3>
+            <p>Preview invoices, share PDFs, mark payments, issue credit notes, and get in-app alerts for activity.</p>
           </article>
           <article class="feature-card">
             <span class="feature-icon">05</span>
-            <h3>Reports for review</h3>
-            <p>Use monthly summaries and CA-ready exports to review sales, taxes and outstanding amounts.</p>
+            <h3>Reports and CA export</h3>
+            <p>Review monthly sales, GST, and outstanding amounts — then export a CA-ready CSV for your accountant.</p>
           </article>
           <article class="feature-card">
             <span class="feature-icon">06</span>
@@ -285,7 +375,7 @@
               </div>
               <div>
                 <span>Tax</span>
-                <strong>CGST + SGST</strong>
+                <strong>CGST + SGST or IGST</strong>
               </div>
               <div>
                 <span>Preview</span>
@@ -352,7 +442,11 @@
             </li>
             <li>
               <strong>Share and track</strong>
-              <span>Send the PDF and follow payment or credit note activity.</span>
+              <span>Send the PDF, record payments, issue credit notes, and follow alerts.</span>
+            </li>
+            <li>
+              <strong>Export for CA</strong>
+              <span>Download the monthly CA report CSV from Reports in the app.</span>
             </li>
           </ol>
         </div>
@@ -364,7 +458,7 @@
             <span class="section-kicker">For month-end clarity</span>
             <h2>Reports ready when it is time to review</h2>
             <p>
-              Keep sales, GST and invoice activity organized so regular review does not turn into manual cleanup.
+              Keep sales, GST and invoice activity organized — then export a CA-ready CSV when it is time for review.
             </p>
           </div>
           <div class="report-panel">
@@ -379,6 +473,10 @@
             <div class="report-row">
               <span>Outstanding</span>
               <strong>₹36,500</strong>
+            </div>
+            <div class="report-row report-row--action">
+              <span>CA report</span>
+              <strong>Export CSV</strong>
             </div>
           </div>
         </div>

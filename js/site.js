@@ -58,7 +58,7 @@
   const isHome = Boolean(document.getElementById("features"));
 
   /** In-page anchors mapped to section ids (home only). */
-  const navSectionIds = ["features", "workflow", "reports", "get-app"];
+  const navSectionIds = ["app-preview", "features", "workflow", "reports", "get-app"];
   const sections = navSectionIds
     .map((id) => document.getElementById(id))
     .filter(Boolean);
@@ -127,6 +127,8 @@
         ".hero-content",
         ".hero-scene",
         ".trust-ledger .ledger-grid",
+        "#app-preview .section-head",
+        "#app-preview .showcase-card",
         ".product-strip .strip-grid > div",
         "#features .section-head",
         "#features .feature-grid .feature-card",
