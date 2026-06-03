@@ -421,7 +421,33 @@ h3 {
   margin-top: 28px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 12px;
+}
+
+/* Official Google Play badge — do not crop, recolor, or distort (Google brand guidelines). */
+.play-badge-link {
+  display: inline-block;
+  line-height: 0;
+  border-radius: var(--radius-sm);
+  transition: opacity 0.2s ease;
+}
+
+.play-badge-link:hover {
+  text-decoration: none;
+  opacity: 0.92;
+}
+
+.play-badge-link:focus-visible {
+  outline: 3px solid rgba(21, 96, 212, 0.38);
+  outline-offset: 4px;
+}
+
+.play-badge {
+  display: block;
+  height: 60px;
+  width: auto;
+  max-width: min(100%, 200px);
 }
 
 .btn {
@@ -2108,6 +2134,10 @@ footer {
 
   .final-cta-actions .btn {
     width: 100%;
+  }
+
+  .final-cta-actions .play-badge-link {
+    align-self: center;
   }
 }
 
