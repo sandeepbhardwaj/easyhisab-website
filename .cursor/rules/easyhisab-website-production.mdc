@@ -1,0 +1,43 @@
+---
+description: Production safety for the public marketing site (stability, SEO, a11y, deploy)
+alwaysApply: true
+---
+
+# EasyHisab website — production safety
+
+Public product site at **https://www.easyhisab.in**. Changes affect trust, brand, SEO, and app adoption. **Stability first** — never break existing behavior without explicit approval.
+
+## Stack and scope
+
+- Static **HTML + CSS** (+ minimal `js/` if present). No frameworks; keep dependencies minimal.
+- Routes: `/`, `/privacy-policy/`, `/delete-account/`.
+- SEO assets: `robots.txt`, `sitemap.xml`, `CNAME`, page metadata — do not remove or weaken without justification.
+- Deploy: GitHub Pages via `.github/workflows/`; production domain from root `CNAME`.
+
+## Before changing code
+
+- Understand the full requirement; list affected pages, assets, workflow, and DNS/deploy implications.
+- Identify side effects on navigation, canonical URLs, performance, SEO, responsiveness, and accessibility.
+- State risks and assumptions; ask for clarification instead of guessing.
+
+## Implementation
+
+- Smallest change that meets the goal; preserve backward compatibility.
+- Follow existing patterns; reuse structure and classes; avoid duplication and dead code.
+- No secrets in repo; no hardcoded credentials; no unvalidated external input; no extra third-party scripts without need.
+
+## Before marking complete
+
+**Functional:** All three routes work; links and anchors correct; no console errors; no debug or placeholder copy left in.
+
+**Responsive:** Verify mobile, tablet, and desktop — no layout regressions.
+
+**Performance:** Avoid extra requests, heavy assets, or CSS bloat; optimize images when touched.
+
+**SEO:** Preserve titles, descriptions, Open Graph, structured headings, `robots.txt`, and `sitemap.xml` consistency with live URLs.
+
+**Accessibility:** Semantic HTML; visible focus and labels; keyboard-usable interactive elements.
+
+**Deploy:** Local static preview (`python3 -m http.server`); review diff; assume changes may ship on next push to `main`.
+
+If uncertain about impact, explain the concern and request clarification rather than shipping a risky change.
