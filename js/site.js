@@ -127,9 +127,11 @@
         ".hero-content",
         ".hero-scene",
         ".trust-ledger .ledger-grid",
+        ".ledger-card",
+        ".link-card-grid .link-card",
         "#app-preview .section-head",
         "#app-preview .showcase-card",
-        ".product-strip .strip-grid > div",
+        ".product-strip .strip-tile",
         "#features .section-head",
         "#features .feature-grid .feature-card",
         ".usp-section .section-head",
@@ -141,7 +143,20 @@
         ".security-list > div",
         ".final-cta .final-grid",
       ]
-    : [".content-shell"];
+    : [
+        ".content-shell",
+        ".page-hero-inner",
+        ".feature-detail-card",
+        ".pricing-card",
+        ".pricing-card-inner",
+        ".pricing-section",
+        ".platform-panel",
+        ".faq-card",
+        ".info-card",
+        ".link-card",
+        ".plan-table-wrap",
+        ".cta-band-inner",
+      ];
 
   const revealNodes = [];
   revealSelectorGroups.forEach((sel) => {

@@ -10,7 +10,7 @@ Public product site at **https://www.easyhisab.in**. Changes affect trust, brand
 ## Stack and scope
 
 - Static **HTML + CSS** (+ minimal `js/` if present). No frameworks; keep dependencies minimal.
-- Routes: `/`, `/privacy-policy/`, `/delete-account/`.
+- Routes: `/`, `/features/`, `/pricing/`, `/web-portal/`, `/contact/`, `/privacy-policy/`, `/delete-account/`.
 - SEO assets: `robots.txt`, `sitemap.xml`, `CNAME`, page metadata — do not remove or weaken without justification.
 - Deploy: GitHub Pages via `.github/workflows/`; production domain from root `CNAME`.
 
@@ -28,7 +28,7 @@ Public product site at **https://www.easyhisab.in**. Changes affect trust, brand
 
 ## Before marking complete
 
-**Functional:** All three routes work; links and anchors correct; no console errors; no debug or placeholder copy left in.
+**Functional:** All listed routes work; links and anchors correct; no console errors; no debug or placeholder copy left in.
 
 **Responsive:** Verify mobile, tablet, and desktop — no layout regressions.
 

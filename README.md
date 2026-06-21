@@ -3,12 +3,19 @@
 Production-ready static website for EasyHisab with:
 
 - Home page (`/`)
+- Features (`/features/`)
+- Pricing (`/pricing/`)
+- Web portal (`/web-portal/`)
+- Contact (`/contact/`)
 - Privacy Policy (`/privacy-policy/`)
 - Account Deletion (`/delete-account/`)
+
+Signed-in product app: **https://app.easyhisab.in** (web portal login: **https://app.easyhisab.in/login** — Basic and Pro users, or invited team members).
 
 ## Tech
 
 - Clean HTML + CSS
+- Minimal `js/site.js` for nav, scroll polish, and reveals
 - No JS frameworks
 - Minimal dependency footprint for fast loading
 
@@ -23,6 +30,10 @@ python3 -m http.server 8088
 Then open:
 
 - `http://localhost:8088/`
+- `http://localhost:8088/features/`
+- `http://localhost:8088/pricing/`
+- `http://localhost:8088/web-portal/`
+- `http://localhost:8088/contact/`
 - `http://localhost:8088/privacy-policy/`
 - `http://localhost:8088/delete-account/`
 
@@ -38,6 +49,10 @@ Production domain: **`https://www.easyhisab.in`** (see root `CNAME`).
 Paths to verify live:
 
 - `/`
+- `/features/`
+- `/pricing/`
+- `/web-portal/`
+- `/contact/`
 - `/privacy-policy/`
 - `/delete-account/`
 

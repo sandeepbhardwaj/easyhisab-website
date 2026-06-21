@@ -6,7 +6,7 @@
     <title>EasyHisab | Simple GST Billing for Indian Businesses</title>
     <meta
       name="description"
-      content="EasyHisab is GST billing for Indian businesses on Android: invoices, credit notes, customers, items, PDF sharing, in-app alerts, and CA report CSV export. Download on Google Play."
+      content="EasyHisab is GST billing for Indian businesses: Android app on every plan, web portal on Basic and Pro. Invoices, credit notes, reports, and CA export."
     >
     <link rel="canonical" href="https://www.easyhisab.in/">
     <meta property="og:site_name" content="EasyHisab">
@@ -15,7 +15,7 @@
     <meta property="og:title" content="EasyHisab — GST billing for Indian businesses">
     <meta
       property="og:description"
-      content="Create GST invoices, manage customers and items, share PDFs, and keep CA-ready reports. Download on Google Play for Android."
+      content="GST billing on Android for every plan. Basic and Pro add the web portal at app.easyhisab.in. Invoices, reports, and CA export."
     >
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.easyhisab.in/assets/og-share.jpg">
@@ -37,7 +37,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon.png">
     <link rel="apple-touch-icon" href="assets/favicon.png">
-    <meta name="theme-color" content="#e8eef6">
+    <meta name="theme-color" content="#060d18">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -45,7 +45,7 @@
         "name": "EasyHisab",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Android",
-        "description": "GST billing for Indian businesses: invoices, customers, items, PDF sharing, credit notes, and CA-ready reports.",
+        "description": "GST billing for Indian businesses: mobile app on every plan, web portal on Basic and Pro, credit notes, and CA-ready reports.",
         "url": "https://www.easyhisab.in/",
         "downloadUrl": "https://play.google.com/store/apps/details?id=com.easyhisab.billing",
         "offers": {
@@ -94,12 +94,14 @@
           </button>
         </div>
         <nav id="primary-nav" class="nav-links" aria-label="Primary">
-          <a href="#app-preview">App preview</a>
-          <a href="#features">Features</a>
-          <a href="#workflow">Workflow</a>
-          <a href="#reports">Reports</a>
-          <a href="#get-app">Download</a>
-          <a href="privacy-policy/">Privacy</a>
+          <a href="features/">Features</a>
+          <a href="pricing/">Pricing</a>
+          <a href="web-portal/">Web portal</a>
+          <a href="contact/">Contact</a>
+          <span class="nav-actions">
+            <a class="nav-login" href="https://app.easyhisab.in/login">Log in</a>
+            <a class="nav-cta" href="#get-app">Get app</a>
+          </span>
         </nav>
       </div>
     </header>
@@ -180,10 +182,11 @@
 
         <div class="container hero-content">
           <span class="eyebrow">GST billing for Indian businesses</span>
-          <h1>Simple GST billing for growing Indian businesses</h1>
+          <h1>Simple GST billing — <span class="headline-accent">mobile first</span>, web when you scale</h1>
           <p>
-            EasyHisab helps shopkeepers, freelancers and small business owners create invoices,
-            manage customers and items, share PDFs, and keep reports ready for review. Get the Android app on Google Play.
+            EasyHisab helps shopkeepers, freelancers and small business owners create GST invoices and simple bills,
+            manage customers and items, share PDFs, and keep reports ready for your CA. Start free on Android;
+            upgrade to Basic or Pro for the web portal and more businesses.
           </p>
           <div class="cta-row">
             <a
@@ -202,40 +205,89 @@
                 decoding="async"
               >
             </a>
-            <a class="btn btn-secondary" href="#app-preview">See app preview</a>
+            <a class="btn btn-secondary" href="features/">See all features</a>
           </div>
           <div class="hero-points" aria-label="Product highlights">
-            <span>GST invoice templates</span>
-            <span>CGST/SGST or IGST by place of supply</span>
+            <span>GST and simple bills</span>
+            <span>Mobile app on every plan</span>
+            <span>Web on Basic &amp; Pro</span>
             <span>PDF and WhatsApp sharing</span>
             <span>CA report CSV export</span>
-            <span>In-app alerts and activity</span>
           </div>
         </div>
       </section>
 
       <section class="trust-ledger" aria-label="EasyHisab trust highlights">
         <div class="container ledger-grid">
-          <div>
-            <span>Auth</span>
+          <article class="ledger-card">
+            <div class="ledger-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 11V7a4 4 0 1 1 8 0v4"/><rect x="4" y="11" width="16" height="10" rx="2"/></svg>
+            </div>
+            <span class="ledger-kicker">Auth</span>
             <strong>Google sign-in</strong>
             <small>Use your Google account to sign in quickly and safely.</small>
-          </div>
-          <div>
-            <span>Access</span>
+          </article>
+          <article class="ledger-card">
+            <div class="ledger-icon ledger-icon--mint" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="ledger-kicker">Access</span>
             <strong>Safe account access</strong>
             <small>Your account stays protected in every active session.</small>
-          </div>
-          <div>
-            <span>Data</span>
+          </article>
+          <article class="ledger-card">
+            <div class="ledger-icon ledger-icon--violet" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            </div>
+            <span class="ledger-kicker">Data</span>
             <strong>Business-level protection</strong>
             <small>Only the right signed-in users can view business data.</small>
-          </div>
-          <div>
-            <span>Backup</span>
+          </article>
+          <article class="ledger-card">
+            <div class="ledger-icon ledger-icon--gold" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v6c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 11v6c0 1.7 4 3 9 3s9-1.3 9-3v-6"/></svg>
+            </div>
+            <span class="ledger-kicker">Backup</span>
             <strong>Regular backups</strong>
             <small>Your records are backed up regularly for recovery support.</small>
-          </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container section-head">
+          <span class="section-kicker">Platforms</span>
+          <h2>Phone for daily billing. Desktop when you need it.</h2>
+          <p>
+            Every plan includes the Android app. Basic and Pro add the signed-in web portal for exports,
+            desktop invoicing, and purchase orders.
+          </p>
+        </div>
+        <div class="container link-card-grid">
+          <a class="link-card link-card--mobile" href="features/">
+            <span class="link-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="2" width="10" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18.01"/></svg>
+            </span>
+            <strong>Mobile features</strong>
+            <span>Invoices, credit notes, customers, items, payments, and CA export.</span>
+            <em class="link-card-arrow" aria-hidden="true">Explore</em>
+          </a>
+          <a class="link-card link-card--web" href="web-portal/">
+            <span class="link-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </span>
+            <strong>Web portal (Basic &amp; Pro)</strong>
+            <span>Desktop ERP at app.easyhisab.in — exports, settings, and POs on Pro.</span>
+            <em class="link-card-arrow" aria-hidden="true">Explore</em>
+          </a>
+          <a class="link-card link-card--plans" href="pricing/">
+            <span class="link-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </span>
+            <strong>Plans</strong>
+            <span>Free, Basic, and Pro — compare business limits and web access.</span>
+            <em class="link-card-arrow" aria-hidden="true">Compare</em>
+          </a>
         </div>
       </section>
 
@@ -249,8 +301,11 @@
           </p>
         </div>
         <div class="container showcase-grid">
-          <article class="showcase-card">
-            <h3>Home dashboard</h3>
+          <article class="showcase-card showcase-card--home">
+            <div class="showcase-card-head">
+              <span class="showcase-tag">Dashboard</span>
+              <h3>Home dashboard</h3>
+            </div>
             <p>Total receivables, paid/overdue/draft KPIs, recent invoices, and notification alerts.</p>
             <div class="showcase-screen showcase-screen--home" aria-hidden="true">
               <div class="showcase-bar">
@@ -268,8 +323,11 @@
               </div>
             </div>
           </article>
-          <article class="showcase-card">
-            <h3>GST invoice preview</h3>
+          <article class="showcase-card showcase-card--invoice">
+            <div class="showcase-card-head">
+              <span class="showcase-tag">GST</span>
+              <h3>GST invoice preview</h3>
+            </div>
             <p>Drafts with CGST + SGST or IGST, discounts, PDF preview, then issue and share.</p>
             <div class="showcase-screen showcase-screen--invoice" aria-hidden="true">
               <div class="showcase-doc-head">
@@ -282,8 +340,11 @@
               <div class="showcase-doc-total"><span>Grand total</span><strong>₹8,496</strong></div>
             </div>
           </article>
-          <article class="showcase-card">
-            <h3>Reports and CA export</h3>
+          <article class="showcase-card showcase-card--reports">
+            <div class="showcase-card-head">
+              <span class="showcase-tag">CA export</span>
+              <h3>Reports and CA export</h3>
+            </div>
             <p>Monthly sales, GST collected, outstanding — export a CA-ready CSV for your accountant.</p>
             <div class="showcase-screen showcase-screen--reports" aria-hidden="true">
               <div class="showcase-doc-line"><span>May 2026 sales</span><span>₹1,84,200</span></div>
@@ -297,30 +358,36 @@
 
       <section class="section product-strip" aria-label="EasyHisab modules">
         <div class="container strip-grid">
-          <div>
+          <article class="strip-tile">
+            <span class="strip-tile-icon" aria-hidden="true">INV</span>
             <strong>Invoices</strong>
             <span>Create, preview, issue and share GST invoices.</span>
-          </div>
-          <div>
+          </article>
+          <article class="strip-tile">
+            <span class="strip-tile-icon strip-tile-icon--mint" aria-hidden="true">CN</span>
             <strong>Credit notes</strong>
             <span>Issue and track credit notes against invoices.</span>
-          </div>
-          <div>
+          </article>
+          <article class="strip-tile">
+            <span class="strip-tile-icon strip-tile-icon--violet" aria-hidden="true">PT</span>
             <strong>Customers</strong>
             <span>Keep customer details ready for faster billing.</span>
-          </div>
-          <div>
+          </article>
+          <article class="strip-tile">
+            <span class="strip-tile-icon strip-tile-icon--gold" aria-hidden="true">IT</span>
             <strong>Items</strong>
             <span>Manage products and services with GST rates.</span>
-          </div>
-          <div>
+          </article>
+          <article class="strip-tile">
+            <span class="strip-tile-icon" aria-hidden="true">RP</span>
             <strong>Reports</strong>
             <span>Monthly summaries and CA report CSV export.</span>
-          </div>
-          <div>
+          </article>
+          <article class="strip-tile">
+            <span class="strip-tile-icon strip-tile-icon--mint" aria-hidden="true">AL</span>
             <strong>Alerts</strong>
             <span>In-app notifications for invoice and credit-note activity.</span>
-          </div>
+          </article>
         </div>
       </section>
 
@@ -571,6 +638,11 @@
       <div class="container footer-row">
         <span>&copy; <span id="year"></span> EasyHisab</span>
         <div class="footer-links">
+          <a href="features/">Features</a>
+          <a href="pricing/">Pricing</a>
+          <a href="web-portal/">Web portal</a>
+          <a href="contact/">Contact</a>
+          <a href="https://app.easyhisab.in/login">Log in</a>
           <a href="privacy-policy/">Privacy Policy</a>
           <a href="delete-account/">Data Deletion</a>
         </div>
