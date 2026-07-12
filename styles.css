@@ -210,7 +210,7 @@ button:focus-visible {
 .brand-mark img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .brand-name {
